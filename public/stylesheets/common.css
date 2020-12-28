@@ -1,0 +1,103 @@
+@import "./reset.css";
+@import "http://at.alicdn.com/t/font_2286288_lgp3j8bsd1.css";
+
+/*
+* 通用样式
+*/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inside {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.select {
+    color: #fe5341;
+}
+
+/**
+* 头部样式
+*/
+
+.header {
+    height: 76px;
+    background-color: aliceblue;
+    box-shadow: 0 0 3px #ccc inset;
+}
+
+.header .logo {
+    padding-top: 8px;
+    float: left;
+}
+
+.header .logo h1 a {
+    display: block;
+    height: 68px;
+    width: 132px;
+    background: url("../images/logonew.png") no-repeat;
+    background-size: 100%;
+    font-size: 0;
+}
+
+.header .logo h1 a:hover {
+    animation: glint 1s ease-in infinite;
+}
+
+.header .nav {
+    float: left;
+    padding: 28px 0 0 40px;
+}
+
+.header .nav ul li {
+    float: left;
+    padding: 0 25px;
+}
+
+.header .nav ul li a {
+    font-size: 20px;
+}
+
+.header .nav ul li a:hover {
+    color: #fe5341;
+}
+
+.header .search,
+.header .logbtn {
+    margin-top: 22px;
+    float: right;
+}
+
+.header .search {
+    margin-top: 24px;
+    margin-right: 40px;
+}
+
+.header .search i {
+    display: block;
+    font-size: 25px;
+    transition: all 0.2s;
+}
+
+.header .search i:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.header .logbtn a {
+    display: block;
+    border: 1px solid #fe5341;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 3px;
+    color: #fe5341;
+    transition: all 0.2s;
+}
+
+.header .logbtn a:hover {
+    background-color: #fe5341;
+    color: white;
+}

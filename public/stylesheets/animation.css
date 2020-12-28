@@ -1,0 +1,26 @@
+/* 动画css */
+
+
+/* 闪烁效果 */
+@keyframes glint {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* 飞入效果 */
+@keyframes  advance {
+    0% {
+        top: -300px;
+        right: -200px;
+    }
+   
+    100% {
+       top: 0;
+       right: 0;
+    }
+}

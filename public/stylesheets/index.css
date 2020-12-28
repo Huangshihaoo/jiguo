@@ -1,0 +1,506 @@
+/* banner模块 */
+
+body {
+    /* height: 2000px; */
+    background: white;
+    transition: all .5s;
+}
+
+.banner {
+    height: 300px;
+    background: url("../images/original.jpg") top center no-repeat;
+}
+
+.banner .tips {
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right;
+    text-align: right;
+    margin-top: 50px;
+    color: white;
+    animation: advance 0.8s ease-in;
+    transition: all 0.2s;
+}
+
+.banner .tips h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.banner .tips .btns span {
+    margin-left: 10px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.banner .tips p {
+    margin: 30px 0 20px;
+    font-size: 18px;
+}
+
+.banner .tips a {
+    display: inline-block;
+    width: 240px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+    background: #fe5341;
+    border-radius: 3px;
+}
+
+/* 热门模块 */
+.hot {
+    background: white;
+    padding: 20px 0;
+}
+
+.hot .inside {
+    position: relative;
+}
+
+/* 两边按钮 */
+.hot .inside .next,
+.hot .inside .last {
+    position: absolute;
+    top: 120px;
+}
+
+.hot .inside .next i,
+.hot .inside .last i {
+    font-size: 60px;
+}
+
+.hot .inside .next {
+    right: -60px;
+}
+
+.hot .inside .last {
+    left: -60px;
+}
+
+/* 热门模块h3 */
+.hot .title,
+.report .title,
+.guiding .title,
+.discovery .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 轮播盒子 */
+.hot .carousel-box {
+    position: relative;
+    width: 1000px;
+    height: 295px;
+    overflow: hidden;
+}
+
+/* ul */
+.hot .carousel-box .carousel {
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    width: 600%;
+    transition: all .2s;
+}
+/* li */
+.hot .carousel-box .carousel .carousel-item {
+    float: left;
+    width: 1000px;
+    height: 295px;
+    text-align: center;
+}
+
+/* 单块 */
+.hot .carousel-box .carousel .carousel-item dl,
+.report ul .report-item,
+.guiding ul .guiding-item,
+.discovery ul .discovery-item {
+    position: relative;
+    float: left;
+    width: 220px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+/* 最后一个单块 */
+.hot .carousel-box .carousel .carousel-item dl:last-child,
+.guiding ul .guiding-item:last-child {
+    margin-right: 0;
+}
+/* 右上角 */
+.hot .carousel-box .carousel .carousel-item dl .tag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    display: inline-block;
+    padding: 6px 10px;
+    background: #fe5341;
+    font-size: 14px;
+    font-weight: 500;
+    color: wheat;
+    border-bottom-left-radius: 6px;
+    z-index: 1;
+}
+
+/* 图片 */
+
+.hot .carousel-box .carousel .carousel-item dl img,
+.report ul .report-item img,
+.guiding .guiding-item img,
+.discovery .discovery-item img {
+    width: 100%;
+    height: 130px;
+}
+
+/* 图片下方文字块 */
+.hot .carousel-box .carousel .carousel-item dl .details,
+.report ul .report-item .info,
+.guiding ul .guiding-item .info,
+.discovery ul .discovery-item .info {
+    padding: 8px 8px 14px;
+}
+
+/* 标题 */
+.hot .carousel-box .carousel .carousel-item dl .details dt {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hot .carousel-box .carousel .carousel-item dl .details .figure {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.hot .carousel-box .carousel .carousel-item dl .details .figure span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    border: 1px solid #fe5341;
+    border-radius: 3px;
+    color: #fe5341;
+}
+
+.hot .carousel-box .carousel .carousel-item dl .details p {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.hot .carousel-box .carousel .carousel-item dl .details p span {
+    color: #fe5341;
+}
+.hot .carousel-box .carousel .carousel-item dl .details :last-child {
+    font-size: 14px;
+}
+
+/* 不一样的单块 */
+.hot .carousel-box .carousel .carousel-item dl:nth-child(3) .tag {
+    background: #fbf4cb;
+    color: #c4a96a;
+}
+
+.hot .carousel-box .carousel dl:nth-child(3) .details .figure span {
+    border: #80c269 1px solid;
+    color: #80c269;
+}
+.hot .carousel-box .carousel .carousel-item dl:nth-child(3) .details p span {
+    color: #80c269;
+}
+
+/* 轮播图的图片闪烁 */
+.hot .carousel-box .carousel .carousel-item dl a:hover img,
+.report ul .report-item a:hover img,
+.guiding ul .guiding-item a:hover img,
+.discovery ul .discovery-item a:hover img {
+    animation: glint 1s ease-in infinite;
+}
+
+/* 报告模块 */
+.report {
+    /* height: 500px; */
+    background: #f7f7f7;
+    padding-bottom: 30px;
+}
+
+.report .inside,
+.guiding .inside,
+.discovery .inside {
+    padding: 20px 0;
+}
+
+.report .title a,
+.guiding .title a,
+.discovery .title a {
+    float: right;
+    font-size: 14px;
+    color: #fe5341;
+}
+
+/* 头部标题右边 */
+.report .title a i,
+.guiding .title a i {
+    vertical-align: middle;
+}
+
+/* 每个li */
+.report ul .report-item,
+.guiding ul .guiding-item,
+.discovery ul .discovery-item {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.report ul .report-item .info p,
+.guiding ul .guiding-item .info p,
+.discovery ul .discovery-item .info p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 300;
+    word-break: break-all;
+}
+
+.report ul .report-item .info .foot,
+.guiding ul .guiding-item .info .foot,
+.discovery ul .discovery-item .info .foot {
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    margin: 15px 0 5px;
+    color: #a3a3a3;
+}
+
+.report ul .report-item .info .foot i,
+.guiding ul .guiding-item .info .foot i,
+.discovery ul .discovery-item .info .foot i {
+    float: right;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.report ul .report-item:nth-child(4n),
+.discovery ul .discovery-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.report ul .report-item:nth-child(n + 4) {
+    margin-bottom: 0;
+}
+
+/* 报告精选 */
+.guiding ul .guiding-item {
+    overflow: visible;
+    border-bottom: none;
+}
+
+.guiding .guiding-item .info {
+    position: relative;
+}
+
+.guiding .guiding-item .info::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: url("../images/listbg.jpg") no-repeat;
+}
+
+/* 发现 */
+
+.discovery {
+    background-color: #f7f7f7;
+}
+
+.discovery ul .discovery-item .info p {
+    font-weight: bold;
+}
+.discovery ul .discovery-item .info p span {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a3a3a3;
+}
+
+.discovery ul .discovery-item .info .foot span {
+    font-size: 14px;
+    color: #fe5341;
+}
+
+.discovery .load {
+    padding: 30px 0;
+    text-align: center;
+    color: #fe5341;
+}
+.discovery .load .moer{
+    /* display: block; */
+    /* text-indent: 2em; */
+    background: url('../images/more.png' )no-repeat left center;
+}
+
+.discovery .load .loading {
+    background: url('../images/loading-icon.gif' )no-repeat left center;
+}
+
+.discovery .load .none {
+    color: black;
+}
+
+/* footer */
+
+.footer {
+    padding: 40px 0;
+    background-color: #505050;
+}
+
+.footer dl {
+    float: left;
+    margin-left: 30px;
+    color: #a3a3a3;
+}
+
+.footer dl dt {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.footer dl dd {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 14px;
+    color: #a3a3a3;
+}
+
+/* 酷玩 */
+.play-navigation h2 {
+    height: 64px;
+    line-height: 64px;
+    padding: 36px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.play-navigation .play-nav {
+    font-size: 18px;
+    text-align: center;
+}
+
+.play-navigation .play-nav a {
+    display: inline-block;
+    width: 160px;
+    padding-bottom: 15px;
+    color: #a3a3a3;
+}
+.play-navigation .play-nav .xuanzhong {
+    color: #fe5341;
+    border-bottom: 5px solid #fe5341;
+}
+
+/* 酷玩分类 */
+
+.play-class {
+    background-color: #f7f7f7;
+    padding: 20px 0 40px;
+}
+
+.play-class .class-item {
+    padding: 15px 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #ebecec;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.play-class .class-item:last-child {
+    margin-bottom: 0;
+}
+
+.play-class .class-item dt {
+    padding: 5px 0;
+    padding-left: 30px;
+    font-size: 16px;
+    border-left: 5px solid #fe5341;
+}
+.play-class .class-item ul {
+    padding: 25px 25px;
+    border-bottom: 1px dashed #ebecec;
+}
+
+.play-class .class-item ul li {
+    position: relative;
+    text-align: center;
+    float: left;
+    width: 150px;
+    height: 130px;
+    margin-right: 7px;
+    margin-bottom: 20px;
+}
+
+.play-class .class-item ul li img {
+    width: 96px;
+    height: 96px;
+}
+
+.play-class .class-item ul li p {
+    position: absolute;
+    bottom: 0;
+    color: #a3a3a3;
+    width: 100%;
+    text-align: center;
+}
+
+.play-class .class-item ul li a:hover p {
+    color: #fe5341;
+} 
+
+.play-class .class-item dd {
+    padding: 0 25px;
+}
+
+.play-class .class-item dd p {
+    display: inline-block;
+    width: 150px;text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 10px;
+    color: #a3a3a3;
+    padding-bottom: 10px;
+
+}.play-class .class-item dd p:hover {
+    color: #fe5341;
+}
+
+/* 回到顶部 */
+.clickTop {
+    /* display: none; */
+    position: fixed;
+    right: 50px;
+    bottom: -100px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    background: #cdcdcd;
+    transition: bottom .5s;
+}
